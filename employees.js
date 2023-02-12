@@ -4,12 +4,12 @@ class Employees{
     }
 
     add = (employee) => {
-        if(this.data[employee.id])
+        /*if(this.data[employee.id])
             throw new Error('This ID not unique!')
-        else {
+        else {*/
             this.data[employee.id] = employee;
             return true;
-        }
+       // }
     }
 
     get = (id) => {

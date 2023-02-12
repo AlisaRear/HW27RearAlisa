@@ -17,9 +17,9 @@ class EmployeeGenerator {
         else return 'Sales Manager';
     }
 
-    getRandomEmployee = () => {
-        return new Employee(this.random, `${this.random}@gmail.com`,
-            this.getRandomGender, `${this.random}`, this.random*1000,
+    getRandomEmployee = (random) => {
+        return new Employee(random, `${random}@gmail.com`,
+            this.getRandomGender, `${random}`, random*1000,
             this.getRandomTitle);
     }
 }
